@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         WebSettings webSettings = mWebView.getSettings();
 
         // 设置与Js交互的权限
-        webSettings.setJavaScriptEnabled(false);
+        webSettings.setJavaScriptEnabled(true);
 
         webSettings.setDefaultTextEncodingName("UTF-8");
         mWebView.addJavascriptInterface(new AndroidtoJs(), "aaaaa");//AndroidtoJS类对象映射到js的test对象
